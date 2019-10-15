@@ -13,7 +13,7 @@ class MovieSearch extends Component {
   search = async val => {
     this.setState({ loading: true });
     const results = await search(
-      `https://api.themoviedb.org/3/search/movie?api_key=c415dc46d2b64fae5453a4cb507c90ba&query=${val}`
+      `https://api.themoviedb.org/3/search/movie?api_key={your_api_key}&query=${val}`
     );
     const movies = results;
 
